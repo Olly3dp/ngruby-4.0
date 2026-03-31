@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | NGRUBY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --amarelo: #D4A017;
+            --vermelho: #800020;
+            --preto: #0a0a0a;
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a1a1a; }
+        ::-webkit-scrollbar-thumb { background: #D4A017; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+    <header class="fixed top-0 w-full bg-black/90 backdrop-blur-xl border-b border-yellow-600/30 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="images/logo.png" alt="NGRUBY" class="h-20">
+            </div>
+            <div class="hidden md:flex items-center space-x-10 font-semibold text-gray-300">
+                <a href="index.html" class="hover:text-yellow-500 transition">Início</a>
+                <a href="sobre.html" class="text-yellow-500">Sobre nós</a>
+                <a href="index.html#contato" class="bg-yellow-500 text-black px-6 py-2.5 rounded-full hover:bg-yellow-400 hover:shadow-lg hover:shadow-yellow-500/20 transition-all active:scale-95 font-bold">Fale Conosco</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="pt-32 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="md:w-1/2">
+                    <img src="images/avatar-ngr.jpeg" alt="Sobre NGRUBY" class="rounded-3xl shadow-2xl border border-yellow-500/30 w-full max-w-lg mx-auto">
+                </div>
+                <div class="md:w-1/2 text-center md:text-left">
+                    <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest uppercase text-yellow-500 bg-yellow-500/10 rounded-full border border-yellow-500/30">
+                        Quem Somos
+                    </span>
+                    <h1 class="text-5xl md:text-6xl font-black text-white mb-8 leading-tight">
+                        NGRUBY
+                    </h1>
+                    <p class="text-xl text-gray-400 mb-6 leading-relaxed">
+                        Somos uma empresa especializada em soluções tecnológicas que transformam ideias em realidade digital.
+                    </p>
+                    <p class="text-lg text-gray-400 mb-8 leading-relaxed">
+                        Desenvolvemos sites elegantes, modernos e responsivos, além de oferecer parcerias estratégicas para webdesigners e agências. Nosso objetivo é a excelência no seu sucesso digital.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="index.html#contato" class="px-8 py-4 bg-yellow-500 text-black rounded-2xl font-bold text-lg hover:bg-yellow-400 transition-all">
+                            Fale Conosco
+                        </a>
+                        <a href="index.html" class="px-8 py-4 bg-transparent text-white border border-gray-600 rounded-2xl font-bold text-lg hover:border-yellow-500 hover:text-yellow-500 transition-all">
+                            Ver Serviços
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-yellow-600/20">
+        <div class="container mx-auto px-6 text-center">
+            <img src="images/logo.png" alt="NGRUBY" class="h-16 mx-auto mb-6">
+            <p>&copy; 2026 NGRUBY - Alison B Oliver | CNPJ: 60.573.956/0001-04</p>
+        </div>
+    </footer>
+
+</body>
+</html>

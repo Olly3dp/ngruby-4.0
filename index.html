@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGRUBY | Soluções Tecnológicas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <style>
+        :root {
+            --amarelo: #D4A017;
+            --vermelho: #800020;
+            --preto: #0a0a0a;
+            --cinza: #1a1a1a;
+        }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1a1a1a; }
+        ::-webkit-scrollbar-thumb { background: #D4A017; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #E1AD01; }
+        
+        .bg-amarelo { background-color: var(--amarelo); }
+        .bg-vermelho { background-color: var(--vermelho); }
+        .bg-preto { background-color: var(--preto); }
+        .text-amarelo { color: var(--amarelo); }
+        .text-vermelho { color: var(--vermelho); }
+        .text-preto { color: var(--preto); }
+        
+        .hover\:bg-vermelho:hover { background-color: var(--vermelho); }
+        .hover\:text-amarelo:hover { color: var(--amarelo); }
+        .hover\:text-vermelho:hover { color: var(--vermelho); }
+        
+        .border-amarelo { border-color: var(--amarelo); }
+        .border-vermelho { border-color: var(--vermelho); }
+    </style>
+</head>
+<body class="bg-black text-white font-sans selection:bg-amber-900 selection:text-white">
+
+    <header class="fixed top-0 w-full bg-black/90 backdrop-blur-xl border-b border-yellow-600/30 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="images/logo.png" alt="NGRUBY" class="h-20">
+                <h1 class="text-2xl font-black tracking-tight text-white">NGRUBY</h1>
+            </div>
+            <div class="hidden md:flex items-center space-x-10 font-semibold text-gray-300">
+                <a href="#inicio" class="hover:text-yellow-500 transition">Início</a>
+                <a href="#servicos" class="hover:text-yellow-500 transition">Serviços</a>
+                <a href="sobre.html" class="hover:text-yellow-500 transition">Sobre nós</a>
+                <a href="#contato" class="bg-yellow-500 text-black px-6 py-2.5 rounded-full hover:bg-yellow-400 hover:shadow-lg hover:shadow-yellow-500/20 transition-all active:scale-95 font-bold">Fale Conosco</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="relative pt-44 pb-32 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-20">
+            <div class="absolute top-0 left-1/4 w-72 h-72 bg-yellow-500 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-red-800 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <span class="inline-block px-4 py-1.5 mb-6 text-sm font-bold tracking-widest uppercase text-yellow-500 bg-yellow-500/10 rounded-full border border-yellow-500/30">
+                    Tecnologia que Transformam
+                </span>
+                <h2 class="text-5xl md:text-7xl font-black text-white mb-8 leading-[1.1]">
+                    Soluções digitais que <span class="text-yellow-500 italic">impulsionam</span> seu negócio.
+                </h2>
+                <p class="text-xl text-gray-400 mb-10 max-w-lg leading-relaxed">
+                    Desenvolvemos sites rápidos, responsivos e personalizados para destacar sua marca na internet. Conteúdos atualizados e suporte contínuo.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#contato" class="px-10 py-5 bg-yellow-500 text-black rounded-2xl font-bold text-lg hover:bg-yellow-400 shadow-xl shadow-yellow-500/20 transition-all active:scale-95">
+                        Falar com Especialista
+                    </a>
+                    <a href="#servicos" class="px-10 py-5 bg-transparent text-white border border-gray-600 rounded-2xl font-bold text-lg hover:border-yellow-500 hover:text-yellow-500 transition-all">
+                        Ver Serviços
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 relative">
+                <div class="relative z-10 p-4 bg-gray-900 rounded-[2.5rem] shadow-2xl border border-yellow-500/30 rotate-3 hover:rotate-0 transition-transform duration-500">
+                    <img src="images/avatar-ngr.jpeg" alt="Alison B Oliver - NGRUBY" class="rounded-[2rem]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-black border-y border-yellow-600/20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-black text-yellow-500">92%</div>
+                    <div class="text-gray-400 text-sm mt-1">Taxa de Aprovação</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-yellow-500">4</div>
+                    <div class="text-gray-400 text-sm mt-1">Planos Oferecidos</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-yellow-500">+130</div>
+                    <div class="text-gray-400 text-sm mt-1">Feedbacks Positivos</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-yellow-500">+210</div>
+                    <div class="text-gray-400 text-sm mt-1">Usuários Cadastrados</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-yellow-500">+160</div>
+                    <div class="text-gray-400 text-sm mt-1">Projetos Concluídos</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-black text-yellow-500">3.713</div>
+                    <div class="text-gray-400 text-sm mt-1">Visitas ao Site</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 bg-gray-900 border-y border-yellow-600/10">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-black text-white mb-4">Nossos Serviços</h3>
+            <p class="text-gray-400 mb-16 max-w-2xl mx-auto">Soluções completas para sua presença digital com qualidade e entrega rápida.</p>
+            
+            <div class="text-center mb-8">
+                <span class="inline-block px-10 py-4 text-2xl font-bold tracking-widest uppercase text-yellow-500 border-2 border-yellow-500/50 rounded-full">MODELOS DE SITE</span>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group p-10 bg-black rounded-3xl border border-transparent hover:border-yellow-500 hover:bg-gray-800 hover:shadow-2xl hover:shadow-yellow-500/10 transition-all duration-300">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white">One Page</h4>
+                    <p class="text-gray-400 leading-relaxed">Ideal para iniciantes. Design elegante e moderno, adaptado para celular, tablet e desktop.</p>
+                    <div class="mt-6 text-yellow-500 font-bold text-2xl">R$ 400,00</div>
+                    <p class="text-yellow-500 text-sm mt-2">Domínio grátis (1º ano)</p>
+                    <p class="text-gray-400 text-xs mt-2">Entregue em até: 24 horas</p>
+                </div>
+
+                <div class="group p-10 bg-black rounded-3xl border border-transparent hover:border-yellow-500 hover:bg-gray-800 hover:shadow-2xl hover:shadow-yellow-500/10 transition-all duration-300">
+                    <div class="w-16 h-16 bg-red-800 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white">3 Páginas</h4>
+                    <p class="text-gray-400 leading-relaxed">Ideal para pequenas empresas. Disponibilize seu catálogo de serviços na internet.</p>
+                    <div class="mt-6 text-yellow-500 font-bold text-2xl">R$ 599,90</div>
+                    <p class="text-yellow-500 text-sm mt-2">Domínio grátis (1º ano)</p>
+                    <p class="text-gray-400 text-xs mt-2">Entregue de: 1/3 dias</p>
+                </div>
+
+                <div class="group p-10 bg-black rounded-3xl border border-transparent hover:border-yellow-500 hover:bg-gray-800 hover:shadow-2xl hover:shadow-yellow-500/10 transition-all duration-300">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white">E-commerce</h4>
+                    <p class="text-gray-400 leading-relaxed">Solução avançada para empresas. Recursos de ponta e suporte de alta qualidade. Até 40 produtos.</p>
+                    <div class="mt-6 text-yellow-500 font-bold text-2xl">R$ 559,90</div>
+                    <p class="text-yellow-500 text-sm mt-2">Domínio grátis (1º ano)</p>
+                    <p class="text-gray-400 text-xs mt-2">Entregue de: 2/5 dias</p>
+                </div>
+            </div>
+
+            <div class="text-center mb-8 mt-16">
+                <span class="inline-block px-10 py-4 text-2xl font-bold tracking-widest uppercase text-yellow-500 border-2 border-yellow-500/50 rounded-full">DESENVOLVIMENTO WEB</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                <div class="group p-10 bg-black rounded-3xl border border-transparent hover:border-yellow-500 hover:bg-gray-800 hover:shadow-2xl hover:shadow-yellow-500/10 transition-all duration-300">
+                    <div class="w-16 h-16 bg-red-800 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white">Plataforma Web</h4>
+                    <p class="text-gray-400 leading-relaxed">Ferramentas abrangentes para empresas em crescimento.</p>
+                    <p class="text-gray-400 text-sm mt-2">Otimize processos e produtividade.</p>
+                    <div class="mt-6 text-yellow-500 font-bold text-2xl">R$ 927,90</div>
+                </div>
+
+                <div class="group p-10 bg-black rounded-3xl border border-transparent hover:border-yellow-500 hover:bg-gray-800 hover:shadow-2xl hover:shadow-yellow-500/10 transition-all duration-300">
+                    <div class="w-16 h-16 bg-yellow-500 rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-4 text-white">App Mobile</h4>
+                    <p class="text-gray-400 leading-relaxed">Solução avançada com todos os módulos e recursos.</p>
+                    <p class="text-gray-400 text-sm mt-2">Suporte e manutenção por 1 ano</p>
+                    <div class="mt-6 text-yellow-500 font-bold text-2xl">R$ 1.420,00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-black">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl font-black text-white mb-4">Por que escolher a NGRUBY?</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+                    Qualidade garantida a cada projeto com entrega rápida e suporte especializado.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-3xl border border-yellow-500/20 hover:border-yellow-500 transition-all duration-300">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-white">Entrega Rápida</h4>
+                    <p class="text-gray-400">Projetos entregues em poucos dias.</p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-3xl border border-red-800/50 hover:border-red-800 transition-all duration-300">
+                    <div class="w-12 h-12 bg-red-800 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-white">Qualidade Garantida</h4>
+                    <p class="text-gray-400">Manutenções gratuitas por 30 dias.</p>
+                </div>
+
+                <div class="bg-gray-900 p-8 rounded-3xl border border-yellow-500/20 hover:border-yellow-500 transition-all duration-300">
+                    <div class="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 text-white">Preços Acessíveis</h4>
+                    <p class="text-gray-400">O melhor custo-benefício do mercado.</p>
+                    <p class="text-yellow-500 text-sm mt-2">Domínio grátis no primeiro ano.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gray-900 border-t border-yellow-600/20">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-black text-white mb-4">Siga-nos no Instagram</h3>
+            <p class="text-gray-400 mb-8">@ali.boliver</p>
+            
+            <div class="flex justify-center gap-4 mb-8">
+                <a href="https://www.instagram.com/ali.boliver" target="_blank" class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 p-4 rounded-2xl hover:scale-110 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/ali.boliver" target="_blank" class="bg-gray-800 p-4 rounded-2xl hover:bg-yellow-500 hover:text-black transition-all">
+                    <span class="text-white font-bold">@ali.boliver</span>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="aspect-square bg-gray-800 rounded-xl overflow-hidden hover:opacity-80 transition-opacity">
+                    <img src="images/Insta 01.png" alt="Post Instagram NGRUBY" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-800 rounded-xl overflow-hidden hover:opacity-80 transition-opacity">
+                    <img src="images/insta 02.jpeg" alt="Post Instagram NGRUBY" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-800 rounded-xl overflow-hidden hover:opacity-80 transition-opacity">
+                    <img src="images/insta 03.jpeg" alt="Post Instagram NGRUBY" class="w-full h-full object-cover">
+                </div>
+                <div class="aspect-square bg-gray-800 rounded-xl overflow-hidden hover:opacity-80 transition-opacity">
+                    <img src="images/Insta 05.jpeg" alt="Post Instagram NGRUBY" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <a href="https://www.instagram.com/ali.boliver" target="_blank" class="inline-block mt-8 px-8 py-3 bg-yellow-500 text-black font-bold rounded-full hover:bg-yellow-400 transition-all">
+                Ver mais no Instagram
+            </a>
+        </div>
+    </section>
+
+    <section class="py-0 relative" id="videoSection">
+        <video 
+            id="mainVideo"
+            class="w-full h-screen object-cover cursor-pointer"
+            onplay="hidePlayButton()"
+            onpause="showPlayButton()"
+            onended="showPlayButton()"
+            poster="images/NGR THUMB0.png"
+        >
+            <source src="images/NGR - NGR TV.mp4" type="video/mp4">
+        </video>
+        
+        <div id="playButton" class="absolute inset-0 flex items-center justify-center bg-black/30 cursor-pointer" onclick="toggleVideo()">
+            <div class="w-24 h-24 bg-red-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-xl">
+                <svg id="playIcon" class="w-12 h-12 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <svg id="pauseIcon" class="w-12 h-12 text-white hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </div>
+        </div>
+
+        <div id="volumeControls" class="absolute bottom-8 right-8 flex items-center gap-3 bg-black/50 p-3 rounded-full hidden">
+            <button onclick="adjustVolume(-0.1)" class="p-2 hover:bg-white/20 rounded-full">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+            </button>
+            <input type="range" min="0" max="1" step="0.1" value="1" onchange="setVolume(this.value)" oninput="setVolume(this.value)" class="w-24 h-2 bg-white/30 rounded-lg appearance-none cursor-pointer">
+            <button onclick="adjustVolume(0.1)" class="p-2 hover:bg-white/20 rounded-full">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+            </button>
+        </div>
+    </section>
+
+    <script>
+        const video = document.getElementById('mainVideo');
+        
+        function toggleVideo() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+        
+        function hidePlayButton() {
+            document.getElementById('playButton').classList.add('hidden');
+            document.getElementById('playIcon').classList.add('hidden');
+            document.getElementById('pauseIcon').classList.remove('hidden');
+            document.getElementById('volumeControls').classList.remove('hidden');
+        }
+        
+        function showPlayButton() {
+            document.getElementById('playButton').classList.remove('hidden');
+            document.getElementById('playIcon').classList.remove('hidden');
+            document.getElementById('pauseIcon').classList.add('hidden');
+            document.getElementById('volumeControls').classList.add('hidden');
+        }
+
+        function setVolume(val) {
+            video.volume = val;
+        }
+        
+        function adjustVolume(delta) {
+            video.volume = Math.max(0, Math.min(1, video.volume + delta));
+            document.querySelector('input[type="range"]').value = video.volume;
+        }
+    </script>
+
+    <section id="contato" class="py-24 bg-yellow-600 relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-32 opacity-10">
+            <svg class="w-96 h-96 text-black" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path></svg>
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h3 class="text-4xl font-black text-black mb-6">Fale com a <span class="font-bold">NGRUBY</span> agora</h3>
+            <p class="text-black/70 mb-12 max-w-xl mx-auto italic text-lg">Nossa equipe está pronta para transformar sua presença digital.</p>
+            
+            <div id="chat-container" class="max-w-xl mx-auto min-h-[500px]">
+                <div class="flex flex-col items-center justify-center space-y-4 py-20">
+                    <div class="w-12 h-12 border-4 border-black/20 border-t-black rounded-full animate-spin"></div>
+                    <p class="text-black font-medium">Iniciando atendimento...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-20 border-t border-yellow-600/20">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center gap-3 mb-6">
+<img src="images/logo.png" alt="NGRUBY" class="h-20">
+                    <h1 class="text-2xl font-black text-white">NGRUBY</h1>
+                </div>
+                <p class="max-w-sm">Empresa especializada em soluções tecnológicas que transformam ideias em realidade digital. Desenvolvemos sites elegantes, modernos e responsivos.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Contato</h4>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span>+55 11 91508-2568</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span>ngr.alboliver@outlook.com</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Av Elisio Cordeiro de Siqueira, Jd Sto Elias, Mangalot, São Paulo, SP</span>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-6">Links Rápidos</h4>
+                <ul class="space-y-4">
+                    <li><a href="sobre.html" class="hover:text-yellow-500 transition">Sobre Nós</a></li>
+                    <li><a href="https://www.instagram.com/ali.boliver" target="_blank" class="hover:text-yellow-500 transition">Redes Sociais</a></li>
+                    <li><a href="#contato" class="hover:text-yellow-500 transition">Entre em Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-6 border-t border-gray-800 mt-16 pt-8 text-center text-sm">
+            <p>&copy; 2026 NGRUBY - Alison B Oliver | CNPJ: 60.573.956/0001-04</p>
+        </div>
+    </footer>
+
+    <script src="bot.min.js"></script>
+</body>
+</html>
